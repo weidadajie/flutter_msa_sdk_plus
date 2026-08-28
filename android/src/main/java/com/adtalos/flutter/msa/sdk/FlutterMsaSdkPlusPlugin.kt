@@ -37,7 +37,7 @@ class FlutterMsaSdkPlusPlugin : FlutterPlugin, MethodCallHandler {
                         result.success(oaid)
                     }
 
-                    override fun onOAIDGetError(error: Throwable) {
+                    override fun onOAIDGetError(error: Exception) {
                         result.success("")
                     }
                 })
